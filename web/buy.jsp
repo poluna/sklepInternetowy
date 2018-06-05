@@ -38,17 +38,17 @@
         for (Product product : products) {
     %>
     <tr>
-        <td><% out.println(counter++); %></td>
-        <td><% out.println(product.getName()); %></td>
-        <td><% out.println(product.getPrice()); %></td>
+        <td><%out.print(counter++);%></td>
+        <td><%out.print(product.getName());%></td>
+        <td><%out.print(product.getPrice());%>zł</td>
     </tr>
 
     <% } %>
 
 </table>
 
-<h2>Suma: <%out.println(totalPrice);%>zł</h2>
-<h2>Średnia cena produktu: <%out.println(averagePrice);%>zł</h2>
+<h2>Suma: <%out.print(totalPrice);%>zł</h2>
+<h2>Średnia cena produktu: <%out.print(averagePrice);%>zł</h2>
 
 
 </body>
